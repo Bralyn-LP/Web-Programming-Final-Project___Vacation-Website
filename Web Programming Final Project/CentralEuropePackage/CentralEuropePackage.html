@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Central Europe Package</title>
+        <link rel="stylesheet" href="CentralEuropePackage.css">
+        <style> 
+          .attraction-content { /* Used later to show and hide elements in the attraction tabs */
+            display: none;
+        }
+
+        .attraction-content.active {
+            display: block;
+        }
+
+
+        </style>
+    </head>
+    <body>
+        <header id="home" class="home">
+            <nav>
+              <div class="navbar">
+                <div class="navlogo">
+                  <a href="#">Continental Crossroads</a>
+                </div>
+                <ul class="navlinks">
+                  <li class="link"><a href="/FirstPage/FirstPage.html#home">Home</a></li> <!--Links to a specific place on the FirstPage-->
+                  <li class="link"><a href="/FirstPage/FirstPage.html#about">About us</a></li>
+                  <li class="link"><a href="/FirstPage/FirstPage.html#destination">Destinations</a></li>
+                  <li class="link"><a href="/FirstPage/FirstPage.html#contact">Contact</a></li>
+                </ul>
+                <a href="/booking/booking.html" class="dis_btn">Book Now</a>
+              </div>
+            </nav>
+        </header>
+        
+        <div id="TopBanner"></div>
+
+        <div>
+          <h1>Discover Central Eurpoe </h1>
+          <p>Featuring: Germany, Netherlands, Switzerland</p>
+        </div>
+        <section class="balkan-package" id="balkan-package">
+          <div class="section_container package_container">
+              <h2 class="section_header">Central Europe Package</h2>
+              <p class="section_subheader">Featuring: Germany, Netherlands, Switzerland</p>
+              <button class="price_btn">$1799</button>
+      
+              <div class="package-details">
+                  <div class="package-card">
+                      <img src="/Images/Germany.jpg" alt="Germany"> <!--[] “Tour of the black forest germany,” Black Forest Tours, https://www.the-black-forest.com/ (accessed Dec. 3, 2023). -->
+                      <h4>Germany</h4>
+                      <p>Embark on a journey through the picturesque landscapes and cultural treasures of Germany.</p>
+                  </div>
+      
+                  <div class="package-card">
+                      <img src="/Images/Netherlands.jpg" alt="Netherlands"> <!--[] “2024: Tulips &amp; Windmills,” Uniworld River Cruises, https://www.uniworld.com/ca/river-cruise/central-europe/rhine/tulips-and-windmills/2024-amsterdam-to-antwerp (accessed Dec. 3, 2023). -->
+                      <h4>Netherlands</h4>
+                      <p>Uncover the enchanting wonders of the Netherlands, where tulip fields and historic windmills blend seamlessly with vibrant cities and rich heritage.</p>
+                  </div>
+      
+                  <div class="package-card">
+                      <img src="/Images/Switzerland.jpg" alt="Switzerland"> <!--[] N. Mafi, “Switzerland is the most innovative country in the world,” Architectural Digest, https://www.architecturaldigest.com/story/switzerland-most-innovative-country-in-the-world (accessed Dec. 3, 2023). -->
+                      <h4>Switzerland</h4>
+                      <p>Experience the timeless allure of Switzerland, where majestic Alps and pristine lakes create a perfect harmony of nature and tradition.</p>
+                  </div>
+              </div>
+
+              <div class="tabs">
+                <button class="tab-button" onclick="showAttraction('GermanyPack')">Germany</button> <!--Country attraction tabs to swap between countries -->
+                <button class="tab-button" onclick="showAttraction('NetherlandsPack')">Netherlands</button>
+                <button class="tab-button" onclick="showAttraction('SwitzerlandPack')">Switzerland</button>
+            </div>
+        
+            <div class="attraction-content" id="GermanyPack">
+                <br>
+              <h4>Black Forest</h4>
+                <p>Take a hike through the forested mountains of the Black Forest; beautiful treelines, and quaint villages abound. </p>
+                <img src="/Images/BlackForest.jpg" alt="BlackForest"> <!--[] A. Ghansiyal, “The 6 most beautiful spots of Germany’s Black Forest,” Travel.Earth, https://travel.earth/black-forest-in-germany/ (accessed Dec. 3, 2023). -->
+                <p>With both short trails, and long trails up to 130km these woods contain trails for all interested in a journey. </p>
+                <br>
+                <h4>Brandenburg Gate</h4>
+                <p>Come see the Brandenburg Gate an 18th century monument of Berlin constructed on the site of a former city gate. </p>
+                <img src="/Images/BrandenburgGate.jpg" alt="BrandenburgGate"> <!--[] C. Nast, “Review: Brandenburg Gate,” Condé Nast Traveler, https://www.cntraveler.com/activities/berlin/brandenburg-gate (accessed Dec. 3, 2023). -->
+                <p>The Brandenburg Gate was the site of several historic events, and with the division created by the Berlin Wall was within a restricted 
+                    area made inaccessible to both those of the east and west. Upon its reopening the Brandenburg Gate became a symbol of unity.</p>
+                <br>
+                <h4>Neuschwanstein Castle</h4>
+                <p>Visit the Neuschwanstein Castle; a 19th century castle resting on a rugged hill in the Alps.</p> 
+                <img src="/Images/NeuschwansteinCastle.jpg" alt="NeuschwansteinCastle"> <!--[] “View the magnificent grandeur of the Neuschwanstein Castle near Füssen, Germany,” Encyclopædia Britannica, https://www.britannica.com/video/179711/Overview-Neuschwanstein-Castle-Fussen-Germany (accessed Dec. 3, 2023). -->
+                <p>Restoration work began in 2017, and due to the nature of the restoration only guided tours are currently avaible. The estimated completion for restorations is spring 2024.</p>
+            </div>
+        
+            <div class="attraction-content" id="NetherlandsPack">
+                <br>
+              <h4>Van Gohg Museum </h4>
+                <p>With more than 200 painting, 500 drawings, and 700 letters in its collection the Van Gohg Museum as its name implies is home to the largest
+                    collection of Van Gohg's works in the world. </p>
+                <img src="/Images/VanGoghMuseumOutside.jpg" alt="VanGoghMuseumOutside"> <!--[] J. Swart, “Van Gogh Museum,” Public Transport Holland Shop, https://www.public-transport-holland.com/van-gogh-museum/ (accessed Dec. 3, 2023). -->
+                <img src="/Images/VanGoghMuseumInside.jpg" alt="VanGoghMuseumInside">
+                <p>Multiple-day tickets are avaible and encouraged, as for many the size of this collection is not feasible to take in within a single visit.</p>
+                  <br>
+                <h4>The windmills of Kinderdjik</h4>
+                <p>Observe one of the largest collections of 18th century windmills on this tour of Kinderdjik, a small Dutch village located at the meeting point of two rivers.</p>
+                <img src="/Images/WindmillsOfKinderdjik.jpg" alt="WindmillsOfKinderdjik"> <!--[5 “Windmills of kinderdijk,” Audley Travel, https://www.audleytravel.com/ca/netherlands/things-to-do/windmills-of-kinderdijk (accessed Dec. 3, 2023). -->
+                <p>Be guided along the paths of the 19 remaining Windmills of Kinderdjik and learn about the extensive canal system of Kinderdjik.</p>
+                  <br>
+                  <h4>Amsterdam</h4>
+                <p>Visit Amsterdam, the capital of the Netherlands and admire its canal system while spending time at the local stores. </p>
+                <img src="https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A52806159-5323-4022-947a-5e907b0f2657?source=next-article&fit=scale-down&quality=highest&width=1440&dpr=1" alt="AmsterdamCanals"> <!--[] “Canals, cobbles and wonky houses’: the allure of Amsterdam,” Financial Times, https://www.ft.com/content/a9e83b73-6232-4884-8b44-7c71a7e6dbd3 (accessed Dec. 3, 2023). -->
+
+            </div>
+        
+            <div class="attraction-content" id="SwitzerlandPack">
+                <br>
+                <h4>The Matterhorn</h4>
+                <p>Come and trek the Matterhorn the massive mountain of the Alps straddling the border of Italy and Switzerland.</p>
+                <img src="/Images/TheMatterhorn.jpg" alt="TheMatterhorn"> <!--[] E. Heath, “Matterhorn: The Complete Guide,” TripSavvy, https://www.tripsavvy.com/matterhorn-mountain-complete-guide-5205505 (accessed Dec. 3, 2023). -->
+                <p>The full hike along the mountains is a 5 day journey of 4-8 hour intervals! For the sake of time shorter treks are offered/recommended and will be required to work
+                    alongside this travel plan.</p>
+                <br>
+                <h4>Jungfraujoch </h4>
+                <p>Famous for being the highest accessible railway in Europe Jungfraujoch requires a 35 minute journy on the Jungfraujoch Railway ascending 1400 metres in just 35 minutes!. </p>
+                <img src="https://media.jungfrau.ch/image/upload/ar_1680:700,c_crop,f_auto,fl_lossy,q_auto/c_scale,w_1992/v1548413476/fileadmin/Jungfraujoch_Top_of_Europe/Jungfraujoch-Sphinx-Gletscher.jpg" alt="Jungfraujoch"> <!--[] “Jungfraujoch – top of Europe,” Jungfraujoch-Top of Europe, https://www.jungfrau.ch/en-gb/jungfraujoch-top-of-europe/ (accessed Dec. 3, 2023). -->
+                <img src="https://cdn-imgix.headout.com/media/images/e046de75b7702de54e4eab78789e07a1-Jungfraujoch.jpg?auto=format&w=814.9333333333333&h=458.4&q=90&fit=crop&ar=16:9" alt="JungfraujochRailway">
+                <p>There are many other sub-attractions at Jungfraujoch including an observation deck, Ice Palace, The Snow Park, and the Lindt Swiss Chocolate Heaven.</p>
+                <h4>Chapel Bridge</h4>
+                <p>The Chapel Bridge or the Kapellbrücke is a woodenfoot bridge spanning the river Reuss. Come sightsee at this historic Swiss landmark and cross the river into town. </p>
+                <img src="/Images/ChapelBridge.jpg" alt="ChapelBridge"> <!--[] “Chapel bridge: Lucerne Landmark: Sightseeing,” Lucerne Tourism, https://www.luzern.com/en/highlights/the-city/lucernes-landmarks-the-chapel-bridge/ (accessed Dec. 3, 2023). -->
+                <p>Dating back to the 17th century the Chapel Bridge itself is a piece of history, and within it lies more history to behold as it bares paintings from the 17th century depicting the history of the bridge. </p>
+
+            </div>
+        
+            <script>
+                function showAttraction(attractionId) { //Used to control the visibilty of the earier attraction tabs 
+                    var attractions = document.getElementsByClassName('attraction-content');
+                    for (var i = 0; i < attractions.length; i++) {
+                        attractions[i].classList.remove('active');
+                    }
+        
+                    document.getElementById(attractionId).classList.add('active');
+                }
+            </script>
+
+              <br>
+              <a href="/booking/booking.html" class="dis_btn">Book Now</a>
+          </div>
+      </section>
+    </body>
+</html>
+        
+
+        

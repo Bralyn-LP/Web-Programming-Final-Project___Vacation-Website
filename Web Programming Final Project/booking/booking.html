@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Package - Continental Crossroads</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+    <header>
+        <div class="banner-text">
+            <h1>Book Your Package</h1>
+        </div>
+        <nav>
+            <!-- Your navigation bar for the booking page -->
+        </nav>
+    </header>
+
+    <section class="booking">
+        <div class="section_container">
+            <div class="pricing">
+                <h3>Pricing</h3>
+                <div class="package">
+                    <img src="pexels-ela-yudhanira-3019893.jpg" alt="Nordic Package">
+                    <h4>Nordic Package</h4>
+                    <p>$1499</p>
+                </div>
+                <div class="package">
+                    <img src="pexels-pixabay-161815.jpg" alt="Mediterranean Package">
+                    <h4>Mediterranean Package</h4>
+                    <p>$2299</p>
+                </div>
+                <div class="package">
+                    <img src="istockphoto-871687474-2048x2048.jpg" alt="Balkan Package">
+                    <h4>Balkan Package</h4>
+                    <p>$1899</p>
+                </div>
+                <div class="package">
+                    <img src="pexels-tranmautritam-922978.jpg" alt="Central Europe">
+                    <h4>Central Europe</h4>
+                    <p>$1799</p>
+                </div>
+            </div>
+            <form action="process_booking.php" method="POST">
+                <label for="package">Select Package:</label>
+                <select id="package" name="package">
+                    <option value="nordic">Nordic Package</option>
+                    <option value="mediterranean">Mediterranean Package</option>
+                    <option value="balkan">Balkan Package</option>
+                    <option value="balkan">Central Europe</option>
+                </select>
+
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <div class="date-selection">
+                    <label for="start_date">Start Date:</label>
+                    <input type="text" id="start_date" name="start_date" required>
+
+                    <label for="end_date">End Date:</label>
+                    <input type="text" id="end_date" name="end_date" required>
+                </div>
+
+                <button type="submit" class="dis_btn">Book Now</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="contact">
+        <!-- Your existing or additional contact section if needed -->
+    </section>
+
+    <script>
+        $(function () {
+            $("#start_date, #end_date").datepicker({
+                dateFormat: "yy-mm-dd",
+                numberOfMonths: 2,
+                showButtonPanel: true,
+            });
+        });
+
+        // Function to handle form submission
+        function handleFormSubmission(event) {
+            event.preventDefault(); // Prevent the default form submission behavior
+
+            // Add your form processing logic here, e.g., send data to the server
+
+            // Display alert message
+            alert("Your trip has been booked!");
+        }
+
+        // Attach the function to the form's submit event
+        document.querySelector('form').addEventListener('submit', handleFormSubmission);
+    </script>
+
+    <script src="path/to/your/scripts.js"></script>
+</body>
+</html>

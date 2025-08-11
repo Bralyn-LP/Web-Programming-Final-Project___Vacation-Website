@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Balkan Package</title>
+        <link rel="stylesheet" href="BalkanPackage.css">
+        <style>
+          .attraction-content { /* Used later to show and hide elements in the attraction tabs */
+            display: none;
+        }
+
+        .attraction-content.active {
+            display: block;
+        }
+
+
+        </style>
+    </head>
+    <body>
+        <header id="home" class="home">
+            <nav>
+              <div class="navbar">
+                <div class="navlogo">
+                  <a href="#">Continental Crossroads</a>
+                </div>
+                <ul class="navlinks">
+                  <li class="link"><a href="/FirstPage/FirstPage.html#home">Home</a></li> <!--Links to a specific place on the FirstPage-->
+                  <li class="link"><a href="/FirstPage/FirstPage.html#about">About us</a></li>
+                  <li class="link"><a href="/FirstPage/FirstPage.html#destination">Destinations</a></li>
+                  <li class="link"><a href="/FirstPage/FirstPage.html#contact">Contact</a></li>
+                </ul>
+                <a href="/booking/booking.html" class="dis_btn">Book Now</a>
+              </div>
+            </nav>
+        </header>
+        
+        <div id="TopBanner"></div>
+
+        <div>
+          <h1>Discover the Balkans</h1>
+          <p>Featuring: Croatia, Albania, Romania</p>
+        </div>
+        <section class="balkan-package" id="balkan-package">
+          <div class="section_container package_container">
+              <h2 class="section_header">Balkans Package</h2>
+              <p class="section_subheader">Featuring: Croatia, Albania, Romania</p>
+              <button class="price_btn">$1899</button>
+      
+              <div class="package-details">
+                  <div class="package-card">
+                      <img src="/Images/croatia.jpg" alt="Croatia"> <!--[] “Croatia,” Encyclopædia Britannica, https://www.britannica.com/place/Croatia (accessed Dec. 3, 2023). -->
+                      <h4>Croatia</h4>
+                      <p>Explore the stunning landscapes and rich history of Croatia. From beautiful coastlines to historic cities, Croatia has it all.</p>
+                  </div>
+      
+                  <div class="package-card">
+                      <img src="/Images/albania.jpg" alt="Albania"> <!--[] “Albania - United States Department of State,” U.S. Department of State, https://www.state.gov/countries-areas/albania/ (accessed Dec. 3, 2023). -->
+                      <h4>Albania</h4>
+                      <p>Discover the hidden gems of Albania, with its diverse landscapes, ancient ruins, and warm hospitality.</p>
+                  </div>
+      
+                  <div class="package-card">
+                      <img src="/Images/romania.jpg" alt="Romania"> <!--[] SemiColonWeb, “Brasov, Transylvania - Romania, travel information,” BRASOV – Romania, Travel and Tourism Information, https://romaniatourism.com/brasov.html (accessed Dec. 3, 2023). -->
+                      <h4>Romania</h4>
+                      <p>Immerse yourself in the charm of Romania, from the medieval castles of Transylvania to the vibrant culture of Bucharest.</p>
+                  </div>
+              </div>
+
+              <div class="tabs">
+                <button class="tab-button" onclick="showAttraction('croatiaPack')">Croatia</button> <!--Country attraction tabs to swap between countries -->
+                <button class="tab-button" onclick="showAttraction('albaniaPack')">Albania</button>
+                <button class="tab-button" onclick="showAttraction('romaniaPack')">Romania</button>
+            </div>
+        
+            <div class="attraction-content" id="croatiaPack">
+              <br>
+              <h4>Dubrovnik</h4>
+                <p>Walk amongst the buildings and walls of the “Old Town Dubrovnik” where the cobble-stone structures show an older time. </p>
+                <img src="/Images/OldTown - coast.jpg" alt="OldTownCoast"> <!--[] “Old town - all you need to know before you go (with photos),” Tripadvisor, https://www.tripadvisor.ca/Attraction_Review-g295371-d550317-Reviews-Old_Town-Dubrovnik_Dubrovnik_Neretva_County_Dalmatia.html (accessed Dec. 3, 2023). -->
+                <img src="/Images/OldTown - Walls.jpg" alt="OldTownWalls"> <!--[] Adelaide, “The Ultimate Guide to dubrovnik for first-time visitors - collective travel guides,” Collective Travel Guides - Inspire to Travel, https://collectivetravelguides.com/things-to-do-in-dubrovnik/ (accessed Dec. 3, 2023). -->
+                <p>Take a guided tour through Dubrovnik and take in the beauty of the old coastal town. The city itself is regarded as a World Heritage Site, and showcases beautiful
+                  medieval architecture. In addition it has a very clear pearl sanded coast to admire from the land, or make for a scenic kayaking session. </p>
+                <br>
+                <h4>Walls of Ston</h4>
+                <p>Take a trek along the Walls of Ston; a 5.5km long pentangular wall linking Ston to Mali Ston. </p>
+                <img src="/Images/WallsOfSton.jpg" alt="WallsOfSton"> <!--[] M. van Twillert, “Ston, Croatia: Medieval walls, salt pans and oysters,” Living in Montenegro :), https://montenegro-for.me/2014/07/ston-croatia-medieval-walls-salt-pans-and-oysters/ (accessed Dec. 3, 2023). -->
+                <p>Constructed in the 14th century the Walls of Ston is one of the longest preserved fortifications in the world.</p>
+                <br>
+                <h4>Pula Arena</h4>
+                <p>Visit the Pula Arena, a 1st-century Roman amphitheatre.</p>
+                <img src="/Images/PulaArena.jpg" alt="PulaArena"> <!--[] “Amphitheatre de Pula,” Tripadvisor, https://www.tripadvisor.com/Attraction_Review-g295373-d550323-Reviews-Amphitheatre_de_Pula-Pula_Istria.html (accessed Dec. 3, 2023). -->
+                <p>Constructed in the 1st century the Pula Arena is one of the best preserved amphitheatres, and the 6th largest in the world!</p>
+            </div>
+        
+            <div class="attraction-content" id="albaniaPack">
+              <br>
+              <h4>Vaser Valley Forestry Railway</h4>
+                <p>Take a train ride through the Carpathian mountains on a steam-powered train! Afterwards enjoy a stop in Paltin for food and fun. </p>
+                <img src="/Images/VaserValleyForestryRailway.jpg" alt="VaserValleyForestryRailway"> <!--[] Roxana, “Mocanita: A ride on the last steam forestry train in Europe,” StampsOnThePassport, https://stampsonthepassport.com/2017/05/traveling-last-real-steam-forestry-train-europe-mocanita-maramures-romania/ (accessed Dec. 3, 2023). -->
+                <p>The Vaser Valley Forestry Railway as the name would imply was fromerly used to transport logs from forsest to mill, and has been in operation since
+                  1932.</p>
+                  <br>
+                <h4>Bran Castle</h4>
+                <p>Roam the halls of the Bran Castle, the most iconic of the Romanian castles.</p>
+                <img src="/Images/BranCastle.jpg" alt="BranCastle"> <!--[] “Bran Castle during nighttime in Romania 4K HD Travel wallpaper,” HD Wallpapers, https://www.hdwallpapers.in/bran_castle_during_nighttime_in_romania_4k_hd_travel-wallpapers.html (accessed Dec. 3, 2023). -->
+                <p>Built in 1377 Bran Castle now serves as a museum displaying art and furniture collected by Queen Marie, with guided tours availble to show its many rooms, works, and 
+                  event the smaller local building such cottages, barns, and water mills.</p>
+                  <br>
+                  <h4>Bucharest</h4>
+                <p>Visit Bucharest, the capital city of Romainia </p>
+                <img src="/Images/Bucharest.jpg" alt="Bucharest"> <!--[] D. N. Dragomirescu, “4K Travel Video of wonderful Bucharest City in Romania,” Vecteezy, https://www.vecteezy.com/video/3698885-bucharest-romania-september-21-2021-4k-travel-video-of-wonderful-bucharest-city-in-romania (accessed Dec. 3, 2023). -->
+            </div>
+        
+            <div class="attraction-content" id="romaniaPack">
+              <br>
+                <h4>Porto Palermo Castle</h4>
+                <p>Come see the well preserved stone castle of Porto Palermo and take in its seaside view.</p>
+                <img src="/Images/PortoPalermo.jpg" alt="PortoPalermo"> <!--[] Euronews Albania, “Nora Muci,” Euronews Albania, https://euronews.al/en/himara-walking-into-the-footsteps-of-history-and-white-rocky-beaches/ (accessed Dec. 3, 2023). -->
+                <p>Originaly constructed in the 15th century, and rebuilt/fortified in the 19th century the Porto Palermo Caste makes for a historic fortress.</p>
+                <br>
+                <h4>The Blue Eye</h4>
+                <p>Swim in the natural water spring renowned as Blue Eye for its deep blue depths as the spring contains a deep underwater cave in its center. </p>
+                <img src="/Images/BlueEye.jpg" alt="BlueEye"> <!--[] “Blue Eye, the ‘source of the Blue Eye’ in Albania,” MyBestPlace, https://www.mybestplace.com/en/article/blue-eye-the-quotsource-of-the-blue-eyequot-in-albania (accessed Dec. 3, 2023). -->
+                <h4>Berat Castle</h4>
+                <p>Walk through Berat Castle a fortress built around the town of Berat, made up of several Byzantine chruches, and Ottoman mosques.</p>
+                <img src="/Images/BeratCastle.jpg" alt="BeratCastle"> <!--[] “Berat Castle,” Nomads Travel Guide, https://www.nomads-travel-guide.com/places/berat-castle/ (accessed Dec. 3, 2023). -->
+                <p>Reconstructed in the 13th century the modern day Berat Castle shows it wear in a charming fasion as portions of its original 5th century construction show its age.</p>
+
+            </div>
+                
+            <script>
+                function showAttraction(attractionId) { //Used to control the visibilty of the earier attraction tabs 
+                    var attractions = document.getElementsByClassName('attraction-content');
+                    for (var i = 0; i < attractions.length; i++) {
+                        attractions[i].classList.remove('active');
+                    }
+        
+                    document.getElementById(attractionId).classList.add('active');
+                }
+            </script>
+
+              <br>
+              <a href="/booking/booking.html" class="dis_btn">Book Now</a>
+          </div>
+      </section>
+    </body>
+</html>
+        
+
