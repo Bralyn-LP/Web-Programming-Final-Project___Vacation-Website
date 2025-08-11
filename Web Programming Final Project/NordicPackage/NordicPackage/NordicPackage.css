@@ -1,0 +1,302 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*Main Header*/
+.header_container{
+  max-width: 1200px;
+  margin: auto;
+  padding: 5rem 1rem;
+}
+.section_header{
+  margin-bottom: 1rem;
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: center;
+  color: rgb(216, 216, 75);
+}
+
+.btn{
+  padding: .75rem 1.5rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  color: black;
+  background-color: gold;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.btn:hover{
+  transition: 0.5s;
+  opacity: 2;
+  background-color: orange;
+  transform: translateY(-5px);
+}
+
+.dis_btn{
+  padding: 1rem 1rem;
+  text-align: center;
+  margin-left: 9rem;
+  outline: none;
+  font-size: 1.5rem;
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+  cursor: pointer;
+  transition: 0.5s;
+  border-radius: 500px;
+}
+.dis_btn_1 {
+  padding: 1rem 1rem;
+  margin-left: 54rem;
+  align-items: center; 
+  outline: none;
+  font-size: 1.5rem;
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+  cursor: pointer;
+  transition: 0.5s;
+  border-radius: 500px;
+}
+
+.dis_btn:hover{
+background: #ff004f;
+transition: 0.7s;
+}
+
+img{
+  width: 500px;
+  display: grid;
+  
+}
+a{
+  text-decoration: none;
+}
+
+/*Code for the NavBar*/
+
+body{
+  font-family: 'Kanit', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  scroll-behavior: smooth;
+  background-color: black;
+}
+header{
+   background-image: linear-gradient(to top,black, transparent), url(pexels-ela-yudhanira-3019893.jpg); /* J. Miville-Dechêne, “Indeed, let’s be Norway,” Canada’s National Observer, https://www.nationalobserver.com/2023/05/10/opinion/indeed-lets-be-norway (accessed Dec. 4, 2023). */
+   background-blend-mode: darken;
+   background-position: center center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   justify-content: space-around;
+   padding-bottom: 0;
+}
+nav{
+  background-color: black;
+  border-bottom: 1px solid darkslategray;
+  position:fixed;
+  z-index:9999;
+  width: 100%;
+  background-color: rgba(113, 113, 113, 0.7);
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+.navbar{
+  max-width: 1300px;
+  margin: auto;
+  padding: 1.5rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem; 
+}
+.navlogo a {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+}
+.navlinks{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.link a {
+  padding: 1.5rem 5px;
+  font-weight: 500; 
+  color: white;
+  transition: 0.3s;
+}
+.link a:hover{
+  color: orange;
+  border-bottom: 2px solid red;
+}
+.link span{
+  padding: 1rem 0;
+  color: white;
+  cursor: pointer;
+}
+
+
+/*Header Text*/
+.header_container{
+  padding: 12rem 1rem;
+}
+.header_container h1{
+  margin-bottom: 1rem;
+  max-width: 700px;
+  font-size: 4rem;
+}
+
+.header_container h3{
+  position: relative;
+  margin-left: 4rem;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  font-weight: 550;
+}
+.header_container h3::after{
+  position: absolute;
+  content: "";
+  left: -3rem;
+  top: 50%;
+  transform: translate(-50%);
+  height: 2px;
+  width: 2rem;
+  background-color: white;
+}
+
+.body_content{
+  background-image: linear-gradient(to bottom, rgb(15, 14, 14), transparent);
+  width: 100%;
+}
+
+.grid{
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(5, 3fr);
+  gap: 2rem;
+  padding-top: 3rem;
+}
+
+.Denmark{
+  padding: 0 2rem;
+  max-width: 500px;
+  margin: auto;
+}
+
+.Denmark h2{
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 800;
+  color: orange;
+}
+
+.Denmark p{
+  margin-bottom: 2rem;
+  padding-top: 1rem;
+}
+
+.Denmark img{
+  position: relative;
+  border-radius: 0.2rem;
+}
+
+.Denmark img::after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  background-image: linear-gradient(to top, rgb(15, 14, 14), transparent);
+}
+
+.Norway{
+  padding: 0 2rem;
+  max-width: 500px;
+  margin: auto;
+}
+
+.Norway h2{
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 800;
+  color: orange;
+}
+
+.Norway p{
+  margin-bottom: 2rem;
+  padding-top: 1rem;
+}
+
+.Norway img{
+  position: relative;
+  border-radius: 0.2rem;
+  max-width: 500px;
+  margin: auto;
+}
+
+.Norway img::after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  background-image: linear-gradient(to top, rgb(15, 14, 14), transparent);
+}
+
+.Sweden{
+  padding: 0 2rem;
+  max-width: 500px;
+  margin: auto;
+}
+
+.Sweden h2{
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 800;
+  color: orange;
+}
+
+.Sweden p{
+  margin-bottom: 2rem;
+  padding-top: 1rem;
+}
+
+.Sweden img{
+  position: relative;
+  border-radius: 0.2rem;
+}
+
+.Sweden img::after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  background-image: linear-gradient(to top, rgb(15, 14, 14), transparent);
+}
+
+.pricing{
+  color: rgb(179, 52, 35);
+  max-width: 500px;
+  margin-left: 35rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: right;
+}
