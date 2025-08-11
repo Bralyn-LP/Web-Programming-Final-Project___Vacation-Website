@@ -1,0 +1,1 @@
+This repository contains code and images relating to a vacation website me and my group created for a final project in the course Web Programming at Ontario Tech University. The main function of the website was to display various tourist destinations and provide a proper method of booking and registering.
